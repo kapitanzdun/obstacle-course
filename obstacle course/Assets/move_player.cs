@@ -2,16 +2,12 @@ using UnityEngine;
 
 public class move_player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("hello worlds");
-    }
+    public Rigidbody Rb;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate ()
     {
-        
+        Rb.AddForce(-20 , 0, 0 * Time.deltaTime);
     }
 }
 
