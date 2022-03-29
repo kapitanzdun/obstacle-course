@@ -2,9 +2,16 @@
 using UnityEngine;
 
 public class игрокCollision : MonoBehaviour
-{
-   void OnCollisionEnter ()
+
+ {
+   public move_player movement ; 
+
+   void OnCollisionEnter (Collision collisionInfo )
    {
-       Debug.Log("Oh I bumped the owner ^^ .");
+       if (collisionInfo.collider.tag == "ф")
+       {
+           movement.enabled = false;
+       }
+       
    }
 }
