@@ -14,18 +14,15 @@ public class move_player : MonoBehaviour
 
         if(Input.GetKey("d"))
         {
-            Rb.AddForce(0,0,-sidewaysForse* Time.deltaTime);
+            Rb.AddForce(0,0,-sidewaysForse* Time.deltaTime, ForceMode.VelocityChange );
         }
 
-        if(Input.GetKey("a"))
+        if(Input.GetKey("s"))
         {
-            Rb.AddForce(0,0,sidewaysForse* Time.deltaTime);
+            Rb.AddForce(0,0,sidewaysForse* Time.deltaTime ,ForceMode.VelocityChange);
         }
 
-        if(Input.GetKey("w"))
-        {
-            Rb.AddForce(0,100+sidewaysForse* Time.deltaTime,0);
-        }
+        
     }
 }
 
