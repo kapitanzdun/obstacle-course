@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/qwe1.unity
+    guid: a1d34489c39545a47b2f4be46c4325bc
   m_configObjects: {}

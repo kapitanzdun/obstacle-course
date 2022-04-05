@@ -21,7 +21,11 @@ public class move_player : MonoBehaviour
         {
             Rb.AddForce(0,0,sidewaysForse* Time.deltaTime ,ForceMode.VelocityChange);
         }
-
+        
+        if (Rb.position.y < -1f)
+        {
+           FindObjectOfType<GameManager>().EndGame();
+        }
         
     }
 }
