@@ -4,15 +4,20 @@ using UnityEngine . SceneManagement;
 public class GameManager : MonoBehaviour
 {
   bool gameHasEnded = false;
+  public float restartDelay = 1f;
+  public void CompleteLevel()
+  {
+    Debug.Log("Level Won!!!!!!!!!!!!!!!!!!!!?!");
+  }
   public void EndGame ()
   {
-    if (gameHasEnded == false)
+    if (gameHasEnded == false) 
     {
-       
-    }
-    gameHasEnded = true ;
+       gameHasEnded = true ;
      Debug.Log("GAME OVER");
-     Restart();
+     Invoke("Restart", restartDelay );
+    }
+    
   }
   void Restart ()
   {
