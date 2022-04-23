@@ -616,6 +616,7 @@ GameObject:
   - component: {fileID: 398860877}
   - component: {fileID: 398860876}
   - component: {fileID: 398860875}
+  - component: {fileID: 398860874}
   m_Layer: 0
   m_Name: 'end '
   m_TagString: end
@@ -623,6 +624,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &398860874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398860873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da09d41d616bc0b4892d124a3234f504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1685262579}
 --- !u!65 &398860875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2903,9 +2917,8 @@ GameObject:
   - component: {fileID: 1695138614}
   - component: {fileID: 1695138616}
   - component: {fileID: 1695138615}
-  - component: {fileID: 1695138617}
   m_Layer: 5
-  m_Name: 'level Complete  '
+  m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2968,18 +2981,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695138613}
   m_CullTransparentMesh: 1
---- !u!114 &1695138617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695138613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74ef4546e8e7f934692a70a955696c0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1765265430
 GameObject:
   m_ObjectHideFlags: 0
